@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Authors>Moghaddam</Authors>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Description>Using this Blazor library, you can select the desired location and get its address, longitude and latitude.</Description>
+    <Copyright>© Moghaddam. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/MeysamMoghaddam/BlazorMap</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/MeysamMoghaddam/BlazorMap</RepositoryUrl>
+    <PackageTags>Blazor .net6 GeoLocation BlazorMap</PackageTags>
+    <PackageReleaseNotes>initial package</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+<Map Identifier="mymap" @bind-Lat="Lat" @bind-Lng="Lng" @bind-Address="Address" ViewHeight="50" />
+<SurveyPrompt Title="How is Blazor working for you?" />
+<br />
+lat: @Lat
+<br />
+lng: @Lng
+<br />
+address: @Address
+
+@code{
+    public string Lat { get; set; } = "35.8314881";
+    public string Lng { get; set; } = "50.99823475";
+    public string Address { get; set; }
+}
