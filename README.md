@@ -3,11 +3,11 @@
 Using this Blazor library, you can select the desired location and get its address, longitude and latitude.
 ## Install
 `
-Install-Package BlazorMap -Version x.x.x
+Install-Package Blazor.Map -Version x.x.x
 `
 
 or 
-[Latest Version](https://www.nuget.org/packages/BlazorMap/)
+[Latest Version](https://www.nuget.org/packages/Blazor.Map/)
 
 ## Use
 ### Register Service In DI Container

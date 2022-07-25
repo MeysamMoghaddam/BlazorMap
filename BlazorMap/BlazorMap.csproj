@@ -14,7 +14,15 @@
     <PackageTags>Blazor .net6 GeoLocation BlazorMap</PackageTags>
     <PackageReleaseNotes>initial package</PackageReleaseNotes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageId>Blazor.Map</PackageId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\images\**" />
+    <Content Remove="wwwroot\images\**" />
+    <EmbeddedResource Remove="wwwroot\images\**" />
+    <None Remove="wwwroot\images\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Include="..\README.md">

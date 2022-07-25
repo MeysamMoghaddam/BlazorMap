@@ -20,10 +20,10 @@ namespace BlazorMap
         public MapJsInterop(IJSRuntime jsRuntime)
         {
             moduleTask = new(() => jsRuntime.InvokeAsync<IJSObjectReference>(
-                "import", "./_content/BlazorMap/leaflet.js").AsTask());
+                "import", "./_content/Blazor.Map/leaflet.js").AsTask());
 
             main = new(() => jsRuntime.InvokeAsync<IJSObjectReference>(
-              "import", "./_content/BlazorMap/main.js").AsTask());
+              "import", "./_content/Blazor.Map/main.js").AsTask());
 
             Init();
         }
